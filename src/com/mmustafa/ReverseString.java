@@ -9,7 +9,7 @@ public class ReverseString {
 	
 	public static void getData() {
 		Scanner sc = new Scanner(System.in);
-		System.out.print("Lutfen String giriniz : ");
+		System.out.print("Lutfen Kelime giriniz : ");
 		String str = sc.nextLine();
 		sc.close();
 		reverse(str);
@@ -18,9 +18,7 @@ public class ReverseString {
 	public static void reverse(String str) {
 		String newString = "";
 		for (int i = str.length() - 1; i >= 0; i--) {
-			String ch1 = "" + str.charAt(i);
-			
-			newString = newString + ch1;
+			newString += str.charAt(i);
 		}
 		System.out.println(newString);
 	}
